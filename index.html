@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Document</title>
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font-Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header Section -->
+    <header>
+        <!-- Navigation Bar -->
+        <div class="nav container">
+            <a href="#" class="logo"><i class='bx bx-shopping-bag'></i><span>Boutique</span> Du Marché</a>
+            <i class='bx bx-cart' id="cart-icon"></i>
+            <!-- Cart Section -->
+            <div class="cart">
+                <div class="cart-title">Your Cart</div>
+                <!-- Content -->
+                <div class="cart-content">  
+                </div>
+                <!-- Total Section -->
+                <div class="total" id="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- Cart Closing  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+
+    </header>
+    <!-- Shopping Section -->
+    <section>
+        <h2 class="section-title">Shop Products</h2>
+        <!-- Main -->
+        <div class="shop-content">
+            <!-- Item 1 -->
+            <div class="product-box">
+                <img src="./Images/pexels-wallace-chuck-3261069.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nike Shoes</h2>
+                <span>
+                    <i id="icon1" onclick="likeBtn1()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$799.99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+               
+            </div>
+            <!-- Item 2 -->
+            <div class="product-box">
+                <img src="./Images/pexels-coppertist-wu-16030484.jpg" alt="" class="product-img">
+                <h2 class="product-title">Ancient KeyHolder</h2>
+                <span>
+                    <i id="icon2" onclick="likeBtn2()" class='bx bxs-heart love'></i>
+                </span><br>
+                <span class="product-price">$2999.99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                     
+            </div>
+            <!-- Item 3 -->
+            <div class="product-box">
+                <img src="./Images/pexels-luis-quintero-3731256.jpg" alt="" class="product-img">
+                <h2 class="product-title">Versace BackPack</h2>
+                <span>
+                    <i id="icon3" onclick="likeBtn3()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$3999.990</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                        
+            </div>
+            <!-- Item 4 -->
+            <div class="product-box">
+                <img src="./Images/pexels-ron-lach-7900665.jpg" alt="" class="product-img">
+                <h2 class="product-title">Metal Bottle</h2>
+                <span>
+                    <i id="icon4" onclick="likeBtn4()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$499.99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                         
+            </div>
+            <!-- Item 5 -->
+            <div class="product-box">
+                <img src="./Images/pexels-mearlywan-16378444.jpg" alt="" class="product-img">
+                <h2 class="product-title">Body Wash</h2>
+                <span>
+                    <i id="icon5" onclick="likeBtn5()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$350.99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                        
+            </div>
+            <!-- Item 6 -->
+            <div class="product-box">
+                <img src="./Images/varun-gaba-dcgB3CgidlU-unsplash.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nikon Camera</h2>
+                <span>
+                    <i id="icon6" onclick="likeBtn6()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$3900.89</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                         
+            </div>
+              <!-- Item 7 -->
+              <div class="product-box">
+                <img src="./Images/tomasz-gawlowski-YDZPdqv3FcA-unsplash.jpg" alt="" class="product-img">
+                <h2 class="product-title">HeadSets</h2>
+                <span>
+                    <i id="icon7" onclick="likeBtn7()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$3500.89</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                          
+            </div>
+             <!-- Item 8 -->
+             <div class="product-box">
+                <img src="./Images/john-torcasio-TJrkkhdB39E-unsplash.jpg" alt="" class="product-img">
+                <h2 class="product-title">Rolex Wristwatch</h2>
+                <span>
+                    <i id="icon8" onclick="likeBtn8()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$390000.89</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                          
+            </div>
+            <!-- Item 9-->
+            <div class="product-box">
+                <img src="./Images/giorgio-trovato-K62u25Jk6vo-unsplash.jpg" alt="" class="product-img">
+                <h2 class="product-title">Ralph Lauren Sunglasses</h2>
+                <span>
+                    <i id="icon9" onclick="likeBtn9()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$8900.89</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                         
+            </div>
+            <!-- Item 10 -->
+            <div class="product-box">
+                <img src="./Images/sai-abhinivesh-burla-zRTe1gTQk34-unsplash.jpg" alt="" class="product-img">
+                <h2 class="product-title">Earpods</h2>
+                <span>
+                    <i id="icon10" onclick="likeBtn10()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$3900.89</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                          
+            </div>
+             <!-- Item 11 -->
+             <div class="product-box">
+                <img src="./Images/jakob-owens-O_bhy3TnSYU-unsplash.jpg" alt="" class="product-img">
+                <h2 class="product-title">Adventure Travel-pack</h2>
+                <span>
+                    <i id="icon11" onclick="likeBtn11()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$3900.89</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                         
+            </div>
+             <!-- Item 12 -->
+             <div class="product-box">
+                <img src="./Images/andrew-pons-cLHPacdtpSY-unsplash.jpg" alt="" class="product-img">
+                <h2 class="product-title">Suzuki PowerBike</h2>
+                <span>
+                    <i id="icon12" onclick="likeBtn12()" class='bx bxs-heart love' ></i>
+                </span><br>
+                <span class="product-price">$69000.89</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+                          
+            </div>
+           
+        </div>
+    </section>
+    <script type="text/javascript">
+        // first like button
+        var btn1=document.getElementById("icon1");
+        function likeBtn1(){
+            if (btn1.classList.contains("far")){
+                btn1.classList.remove("far");
+                btn1.classList.add("fas");
+            } else{
+                btn1.classList.remove("fas");
+                btn1.classList.add("far");
+            }
+        }
+        // Second like button
+        var btn2=document.getElementById("icon2");
+        function likeBtn2(){
+            if (btn2.classList.contains("far")){
+                btn2.classList.remove("far");
+                btn2.classList.add("fas");
+            } else{
+                btn2.classList.remove("fas");
+                btn2.classList.add("far");
+            }
+        }
+        // Third like button
+        var btn3=document.getElementById("icon3");
+        function likeBtn3(){
+            if (btn3.classList.contains("far")){
+                btn3.classList.remove("far");
+                btn3.classList.add("fas");
+            } else{
+                btn3.classList.remove("fas");
+                btn3.classList.add("far");
+            }
+        }
+        // Fourth Like button
+        var btn4=document.getElementById("icon4");
+        function likeBtn4(){
+            if (btn4.classList.contains("far")){
+                btn4.classList.remove("far");
+                btn4.classList.add("fas");
+            } else{
+                btn4.classList.remove("fas");
+                btn4.classList.add("far");
+            }
+        }
+        // Fifth Like button
+        var btn5=document.getElementById("icon5");
+        function likeBtn5(){
+            if (btn5.classList.contains("far")){
+                btn5.classList.remove("far");
+                btn5.classList.add("fas");
+            } else{
+                btn5.classList.remove("fas");
+                btn5.classList.add("far");
+            }
+        }
+         // Sixth Like button
+         var btn6=document.getElementById("icon6");
+        function likeBtn6(){
+            if (btn6.classList.contains("far")){
+                btn6.classList.remove("far");
+                btn6.classList.add("fas");
+            } else{
+                btn6.classList.remove("fas");
+                btn6.classList.add("far");
+            }
+        }
+         // Seventh Like button
+         var btn7=document.getElementById("icon7");
+        function likeBtn7(){
+            if (btn7.classList.contains("far")){
+                btn7.classList.remove("far");
+                btn7.classList.add("fas");
+            } else{
+                btn7.classList.remove("fas");
+                btn7.classList.add("far");
+            }
+        }
+         // Eighth Like button
+         var btn8=document.getElementById("icon8");
+        function likeBtn8(){
+            if (btn8.classList.contains("far")){
+                btn8.classList.remove("far");
+                btn8.classList.add("fas");
+            } else{
+                btn8.classList.remove("fas");
+                btn8.classList.add("far");
+            }
+        }
+         // Ninth Like button
+         var btn9=document.getElementById("icon9");
+        function likeBtn9(){
+            if (btn9.classList.contains("far")){
+                btn9.classList.remove("far");
+                btn9.classList.add("fas");
+            } else{
+                btn9.classList.remove("fas");
+                btn9.classList.add("far");
+            }
+        }
+         // Tenth Like button
+         var btn10=document.getElementById("icon10");
+        function likeBtn10(){
+            if (btn10.classList.contains("far")){
+                btn10.classList.remove("far");
+                btn10.classList.add("fas");
+            } else{
+                btn10.classList.remove("fas");
+                btn10.classList.add("far");
+            }
+        }
+         // Eleventh Like button
+         var btn11=document.getElementById("icon11");
+        function likeBtn11(){
+            if (btn11.classList.contains("far")){
+                btn11.classList.remove("far");
+                btn11.classList.add("fas");
+            } else{
+                btn11.classList.remove("fas");
+                btn11.classList.add("far");
+            }
+        }
+         // Twelfth Like button
+         var btn12=document.getElementById("icon12");
+        function likeBtn12(){
+            if (btn12.classList.contains("far")){
+                btn12.classList.remove("far");
+                btn12.classList.add("fas");
+            } else{
+                btn12.classList.remove("fas");
+                btn12.classList.add("far");
+            }
+        }
+       
+    </script>
+
+    <!-- Javascript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
